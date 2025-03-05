@@ -1,13 +1,13 @@
-var Car = /** @class */ (function () {
-    function Car(make, model, year) {
+"use strict";
+class Car {
+    constructor(make, model, year) {
         this.make = make;
         this.model = model;
         this.year = year;
     }
-    Car.prototype.start = function () {
+    start() {
         console.log("Car engine started");
-    };
-    return Car;
-}());
-var myCar = new Car("Toyota", "Corolla", 2022);
+    }
+}
+const myCar = new Car("Toyota", "Corolla", 2022);
 myCar.start();
